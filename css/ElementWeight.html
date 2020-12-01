@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>css层叠性 | 语法规则文档</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    
+    <meta name="description" content="个人程序员博客">
+    
+    <link rel="preload" href="/test/assets/css/0.styles.73a57705.css" as="style"><link rel="preload" href="/test/assets/js/app.d8fe27c6.js" as="script"><link rel="preload" href="/test/assets/js/2.ef0a363d.js" as="script"><link rel="preload" href="/test/assets/js/25.641d2aa1.js" as="script"><link rel="prefetch" href="/test/assets/js/10.4a68c0e8.js"><link rel="prefetch" href="/test/assets/js/100.9d084ad3.js"><link rel="prefetch" href="/test/assets/js/101.e236d463.js"><link rel="prefetch" href="/test/assets/js/102.fba73403.js"><link rel="prefetch" href="/test/assets/js/103.d8911710.js"><link rel="prefetch" href="/test/assets/js/104.33330ef1.js"><link rel="prefetch" href="/test/assets/js/105.63170af6.js"><link rel="prefetch" href="/test/assets/js/106.6e4b7e89.js"><link rel="prefetch" href="/test/assets/js/107.ad0dce14.js"><link rel="prefetch" href="/test/assets/js/108.fba82a14.js"><link rel="prefetch" href="/test/assets/js/109.08ed7bb6.js"><link rel="prefetch" href="/test/assets/js/11.0c8b823b.js"><link rel="prefetch" href="/test/assets/js/110.2417410a.js"><link rel="prefetch" href="/test/assets/js/111.fdf625cd.js"><link rel="prefetch" href="/test/assets/js/112.8b8af428.js"><link rel="prefetch" href="/test/assets/js/12.a5258c9a.js"><link rel="prefetch" href="/test/assets/js/13.6c0674d6.js"><link rel="prefetch" href="/test/assets/js/14.cb303d2c.js"><link rel="prefetch" href="/test/assets/js/15.ad2131f8.js"><link rel="prefetch" href="/test/assets/js/16.c17eb53c.js"><link rel="prefetch" href="/test/assets/js/17.0aa3fcd8.js"><link rel="prefetch" href="/test/assets/js/18.37c38757.js"><link rel="prefetch" href="/test/assets/js/19.63625b6c.js"><link rel="prefetch" href="/test/assets/js/20.75402a35.js"><link rel="prefetch" href="/test/assets/js/21.c8fea0b5.js"><link rel="prefetch" href="/test/assets/js/22.2f12a84d.js"><link rel="prefetch" href="/test/assets/js/23.661853d7.js"><link rel="prefetch" href="/test/assets/js/24.a92a6ee1.js"><link rel="prefetch" href="/test/assets/js/26.73ceb60f.js"><link rel="prefetch" href="/test/assets/js/27.47db5807.js"><link rel="prefetch" href="/test/assets/js/28.d3b138d5.js"><link rel="prefetch" href="/test/assets/js/29.3124a496.js"><link rel="prefetch" href="/test/assets/js/3.16f921bd.js"><link rel="prefetch" href="/test/assets/js/30.cb36b3aa.js"><link rel="prefetch" href="/test/assets/js/31.07509c7d.js"><link rel="prefetch" href="/test/assets/js/32.7e97b582.js"><link rel="prefetch" href="/test/assets/js/33.ad13398b.js"><link rel="prefetch" href="/test/assets/js/34.e8789a0e.js"><link rel="prefetch" href="/test/assets/js/35.8386e6c7.js"><link rel="prefetch" href="/test/assets/js/36.8720ada6.js"><link rel="prefetch" href="/test/assets/js/37.c5003701.js"><link rel="prefetch" href="/test/assets/js/38.c53dfd3e.js"><link rel="prefetch" href="/test/assets/js/39.9a03f589.js"><link rel="prefetch" href="/test/assets/js/4.ede3f828.js"><link rel="prefetch" href="/test/assets/js/40.97e28b6e.js"><link rel="prefetch" href="/test/assets/js/41.36cac6bf.js"><link rel="prefetch" href="/test/assets/js/42.3140cc19.js"><link rel="prefetch" href="/test/assets/js/43.95a1b16d.js"><link rel="prefetch" href="/test/assets/js/44.2f907d08.js"><link rel="prefetch" href="/test/assets/js/45.4bc93b30.js"><link rel="prefetch" href="/test/assets/js/46.0e3a9188.js"><link rel="prefetch" href="/test/assets/js/47.4f47b4f4.js"><link rel="prefetch" href="/test/assets/js/48.fe255669.js"><link rel="prefetch" href="/test/assets/js/49.96dde894.js"><link rel="prefetch" href="/test/assets/js/5.1ced6b4d.js"><link rel="prefetch" href="/test/assets/js/50.a267cdb0.js"><link rel="prefetch" href="/test/assets/js/51.bd4efaf8.js"><link rel="prefetch" href="/test/assets/js/52.d4cae552.js"><link rel="prefetch" href="/test/assets/js/53.cacdc3a1.js"><link rel="prefetch" href="/test/assets/js/54.23df641d.js"><link rel="prefetch" href="/test/assets/js/55.6ac7736c.js"><link rel="prefetch" href="/test/assets/js/56.60370007.js"><link rel="prefetch" href="/test/assets/js/57.02c50d8e.js"><link rel="prefetch" href="/test/assets/js/58.128f3a29.js"><link rel="prefetch" href="/test/assets/js/59.d0808d99.js"><link rel="prefetch" href="/test/assets/js/6.6179bc64.js"><link rel="prefetch" href="/test/assets/js/60.16084437.js"><link rel="prefetch" href="/test/assets/js/61.27fd931a.js"><link rel="prefetch" href="/test/assets/js/62.85ea8ff7.js"><link rel="prefetch" href="/test/assets/js/63.e1c817e2.js"><link rel="prefetch" href="/test/assets/js/64.d1a75712.js"><link rel="prefetch" href="/test/assets/js/65.115fefbb.js"><link rel="prefetch" href="/test/assets/js/66.dcffa809.js"><link rel="prefetch" href="/test/assets/js/67.ed021adf.js"><link rel="prefetch" href="/test/assets/js/68.92e2c65e.js"><link rel="prefetch" href="/test/assets/js/69.5743b4b4.js"><link rel="prefetch" href="/test/assets/js/7.03d4a51e.js"><link rel="prefetch" href="/test/assets/js/70.0c7f52b7.js"><link rel="prefetch" href="/test/assets/js/71.dd5c5869.js"><link rel="prefetch" href="/test/assets/js/72.f74783fe.js"><link rel="prefetch" href="/test/assets/js/73.692a1d96.js"><link rel="prefetch" href="/test/assets/js/74.7ff1c070.js"><link rel="prefetch" href="/test/assets/js/75.d66c4a74.js"><link rel="prefetch" href="/test/assets/js/76.207dc630.js"><link rel="prefetch" href="/test/assets/js/77.df200035.js"><link rel="prefetch" href="/test/assets/js/78.b45648a7.js"><link rel="prefetch" href="/test/assets/js/79.58a1cbb5.js"><link rel="prefetch" href="/test/assets/js/8.0b02de37.js"><link rel="prefetch" href="/test/assets/js/80.f67190a2.js"><link rel="prefetch" href="/test/assets/js/81.3de22c4e.js"><link rel="prefetch" href="/test/assets/js/82.c5d73d94.js"><link rel="prefetch" href="/test/assets/js/83.a9665741.js"><link rel="prefetch" href="/test/assets/js/84.b17f7f1a.js"><link rel="prefetch" href="/test/assets/js/85.77d905b5.js"><link rel="prefetch" href="/test/assets/js/86.c9750445.js"><link rel="prefetch" href="/test/assets/js/87.25d1a385.js"><link rel="prefetch" href="/test/assets/js/88.8675f163.js"><link rel="prefetch" href="/test/assets/js/89.b9d6b720.js"><link rel="prefetch" href="/test/assets/js/9.cf6edd25.js"><link rel="prefetch" href="/test/assets/js/90.bb6a7657.js"><link rel="prefetch" href="/test/assets/js/91.fc4d6038.js"><link rel="prefetch" href="/test/assets/js/92.2ef36937.js"><link rel="prefetch" href="/test/assets/js/93.d75d65dd.js"><link rel="prefetch" href="/test/assets/js/94.de523513.js"><link rel="prefetch" href="/test/assets/js/95.d1c30b96.js"><link rel="prefetch" href="/test/assets/js/96.7f7b0e93.js"><link rel="prefetch" href="/test/assets/js/97.c6453fb8.js"><link rel="prefetch" href="/test/assets/js/98.1bf2edc8.js"><link rel="prefetch" href="/test/assets/js/99.2c195b88.js">
+    <link rel="stylesheet" href="/test/assets/css/0.styles.73a57705.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/test/" class="home-link router-link-active"><!----> <span class="site-name">语法规则文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="css" class="dropdown-title"><span class="title">css</span> <span class="arrow down"></span></button> <button type="button" aria-label="css" class="mobile-dropdown-title"><span class="title">css</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/test/css/Selectors/Selector.html" class="nav-link">
+  属性
+</a></li><li class="dropdown-item"><!----> <a href="/test/css/Selectors/Selector.html" class="nav-link">
+  布局技巧(待定)
+</a></li><li class="dropdown-item"><!----> <a href="/test/css/Selectors/Selector.html" class="nav-link">
+  预处理(待定)
+</a></li><li class="dropdown-item"><!----> <a href="/test/css/Selectors/Selector.html" class="nav-link">
+  工程化(待定)
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="js" class="dropdown-title"><span class="title">js</span> <span class="arrow down"></span></button> <button type="button" aria-label="js" class="mobile-dropdown-title"><span class="title">js</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          参考(创作)
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/test/js/Reference/GlobalObjects/" class="nav-link">
+  内置对象
+</a></li><li class="dropdown-subitem"><a href="/test/js/Reference/Statements/" class="nav-link">
+  语句
+</a></li><li class="dropdown-subitem"><a href="/test/js/Reference/Operators/" class="nav-link">
+  表达式与运算符
+</a></li></ul></li><li class="dropdown-item"><h4>
+          WebAPI(创作)
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/test/js/Reference/" class="nav-link">
+  Dom
+</a></li><li class="dropdown-subitem"><a href="/test/js/WebAPI/Bom/" class="nav-link">
+  Bom
+</a></li></ul></li><li class="dropdown-item"><h4>
+          思维(待定)
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/test/js/Reference/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-subitem"><a href="/test/js/Reference/" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-subitem"><a href="/test/js/Reference/" class="nav-link">
+  算法
+</a></li></ul></li><li class="dropdown-item"><h4>
+          源码(待定)
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/test/js/Reference/" class="nav-link">
+  手撕原理
+</a></li><li class="dropdown-subitem"><a href="/test/js/Reference/" class="nav-link">
+  项目
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架(待定)" class="dropdown-title"><span class="title">框架(待定)</span> <span class="arrow down"></span></button> <button type="button" aria-label="框架(待定)" class="mobile-dropdown-title"><span class="title">框架(待定)</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          框架语言(待定)
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/test/js/Reference/" class="nav-link">
+  vue
+</a></li><li class="dropdown-subitem"><a href="/test/js/Reference/" class="nav-link">
+  React
+</a></li><li class="dropdown-subitem"><a href="/test/js/Reference/" class="nav-link">
+  Angular
+</a></li><li class="dropdown-subitem"><a href="/test/js/Reference/" class="nav-link">
+  React
+</a></li></ul></li><li class="dropdown-item"><h4>
+          插件(待定)
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/test/js/Reference/" class="nav-link">
+  jquery
+</a></li><li class="dropdown-subitem"><a href="/test/js/Reference/" class="nav-link">
+  Layui
+</a></li><li class="dropdown-subitem"><a href="/test/js/Reference/" class="nav-link">
+  bootstrap
+</a></li></ul></li><li class="dropdown-item"><h4>
+          专栏(待定)
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/test/js/Reference/" class="nav-link">
+  http
+</a></li><li class="dropdown-subitem"><a href="/test/js/Reference/" class="nav-link">
+  游览器
+</a></li></ul></li><li class="dropdown-item"><h4>
+          构建工具(待定)
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/test/js/Reference/" class="nav-link">
+  gulp
+</a></li><li class="dropdown-subitem"><a href="/test/js/Reference/" class="nav-link">
+  webpack
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端(待定)" class="dropdown-title"><span class="title">后端(待定)</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端(待定)" class="mobile-dropdown-title"><span class="title">后端(待定)</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          语言(待定)
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/test/js/Reference/" class="nav-link">
+  C#
+</a></li><li class="dropdown-subitem"><a href="/test/js/Reference/" class="nav-link">
+  npm
+</a></li><li class="dropdown-subitem"><a href="/test/js/Reference/" class="nav-link">
+  node
+</a></li><li class="dropdown-subitem"><a href="/test/js/Reference/" class="nav-link">
+  TypeScript
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/962024051/test" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="css" class="dropdown-title"><span class="title">css</span> <span class="arrow down"></span></button> <button type="button" aria-label="css" class="mobile-dropdown-title"><span class="title">css</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/test/css/Selectors/Selector.html" class="nav-link">
+  属性
+</a></li><li class="dropdown-item"><!----> <a href="/test/css/Selectors/Selector.html" class="nav-link">
+  布局技巧(待定)
+</a></li><li class="dropdown-item"><!----> <a href="/test/css/Selectors/Selector.html" class="nav-link">
+  预处理(待定)
+</a></li><li class="dropdown-item"><!----> <a href="/test/css/Selectors/Selector.html" class="nav-link">
+  工程化(待定)
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="js" class="dropdown-title"><span class="title">js</span> <span class="arrow down"></span></button> <button type="button" aria-label="js" class="mobile-dropdown-title"><span class="title">js</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          参考(创作)
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/test/js/Reference/GlobalObjects/" class="nav-link">
+  内置对象
+</a></li><li class="dropdown-subitem"><a href="/test/js/Reference/Statements/" class="nav-link">
+  语句
+</a></li><li class="dropdown-subitem"><a href="/test/js/Reference/Operators/" class="nav-link">
+  表达式与运算符
+</a></li></ul></li><li class="dropdown-item"><h4>
+          WebAPI(创作)
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/test/js/Reference/" class="nav-link">
+  Dom
+</a></li><li class="dropdown-subitem"><a href="/test/js/WebAPI/Bom/" class="nav-link">
+  Bom
+</a></li></ul></li><li class="dropdown-item"><h4>
+          思维(待定)
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/test/js/Reference/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-subitem"><a href="/test/js/Reference/" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-subitem"><a href="/test/js/Reference/" class="nav-link">
+  算法
+</a></li></ul></li><li class="dropdown-item"><h4>
+          源码(待定)
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/test/js/Reference/" class="nav-link">
+  手撕原理
+</a></li><li class="dropdown-subitem"><a href="/test/js/Reference/" class="nav-link">
+  项目
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架(待定)" class="dropdown-title"><span class="title">框架(待定)</span> <span class="arrow down"></span></button> <button type="button" aria-label="框架(待定)" class="mobile-dropdown-title"><span class="title">框架(待定)</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          框架语言(待定)
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/test/js/Reference/" class="nav-link">
+  vue
+</a></li><li class="dropdown-subitem"><a href="/test/js/Reference/" class="nav-link">
+  React
+</a></li><li class="dropdown-subitem"><a href="/test/js/Reference/" class="nav-link">
+  Angular
+</a></li><li class="dropdown-subitem"><a href="/test/js/Reference/" class="nav-link">
+  React
+</a></li></ul></li><li class="dropdown-item"><h4>
+          插件(待定)
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/test/js/Reference/" class="nav-link">
+  jquery
+</a></li><li class="dropdown-subitem"><a href="/test/js/Reference/" class="nav-link">
+  Layui
+</a></li><li class="dropdown-subitem"><a href="/test/js/Reference/" class="nav-link">
+  bootstrap
+</a></li></ul></li><li class="dropdown-item"><h4>
+          专栏(待定)
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/test/js/Reference/" class="nav-link">
+  http
+</a></li><li class="dropdown-subitem"><a href="/test/js/Reference/" class="nav-link">
+  游览器
+</a></li></ul></li><li class="dropdown-item"><h4>
+          构建工具(待定)
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/test/js/Reference/" class="nav-link">
+  gulp
+</a></li><li class="dropdown-subitem"><a href="/test/js/Reference/" class="nav-link">
+  webpack
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端(待定)" class="dropdown-title"><span class="title">后端(待定)</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端(待定)" class="mobile-dropdown-title"><span class="title">后端(待定)</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          语言(待定)
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/test/js/Reference/" class="nav-link">
+  C#
+</a></li><li class="dropdown-subitem"><a href="/test/js/Reference/" class="nav-link">
+  npm
+</a></li><li class="dropdown-subitem"><a href="/test/js/Reference/" class="nav-link">
+  node
+</a></li><li class="dropdown-subitem"><a href="/test/js/Reference/" class="nav-link">
+  TypeScript
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/962024051/test" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/test/css/Selectors/Selector.html" class="sidebar-link">选择器</a></li><li><a href="/test/css/ElementWeight.html" aria-current="page" class="active sidebar-link">元素权重</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/test/css/ElementWeight.html#css层叠性" class="sidebar-link">css层叠性</a></li><li class="sidebar-sub-header"><a href="/test/css/ElementWeight.html#css继承性" class="sidebar-link">css继承性</a></li><li class="sidebar-sub-header"><a href="/test/css/ElementWeight.html#css权重" class="sidebar-link">css权重</a></li></ul></li><li><section class="sidebar-group collapsable depth-0"><a href="/test/css/Types/Length" class="sidebar-heading clickable"><span>数据类型</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/test/css/Functions/expression" class="sidebar-heading clickable"><span>函数</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/test/css/CssRule/font-face" class="sidebar-heading clickable"><span>规则</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/test/css/Text/font" class="sidebar-heading clickable"><span>文本控制</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/test/css/BoxModel/BoxSize" class="sidebar-heading clickable"><span>盒模型</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/test/css/Layout/Display" class="sidebar-heading clickable"><span>布局</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/test/css/Dat/Transforms" class="sidebar-heading clickable"><span>变形动画过渡</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/test/css/OtherAttributes/scroll" class="sidebar-heading clickable"><span>其他相关属性</span> <span class="arrow right"></span></a> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="css层叠性"><a href="#css层叠性" class="header-anchor">#</a> css层叠性</h2> <ol><li><div class="language-js extra-class"><pre class="language-js"><code>        div <span class="token punctuation">{</span>
+            color<span class="token operator">:</span> red<span class="token punctuation">;</span>
+            font<span class="token operator">-</span>size<span class="token operator">:</span> <span class="token number">20</span>px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+         
+        div <span class="token punctuation">{</span>
+            font<span class="token operator">-</span>size<span class="token operator">:</span> <span class="token number">25</span>px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+</code></pre></div><p>最终效果 就近样式覆盖原有样式</p></li> <li><div class="language- extra-class"><pre class="language-text"><code>        div {
+            color: red;
+            font-size: 25px;
+        }
+</code></pre></div></li> <li><p>原则</p> <ol><li>样式冲突，遵循的原则是<strong>就近原则。</strong> 那个样式离着结构近，就执行那个样式。</li> <li>样式不冲突，不会层叠</li></ol></li> <li><div class="language- extra-class"><pre class="language-text"><code>CSS层叠性：长江后浪推前浪，前浪死在沙滩上(就近原则)
+</code></pre></div><p>(1) 在选择器中不要使用ID。就算只用一个ID，也会大幅提升优先级。当需要覆盖这个选择器时，通常找不到另一个有意义的ID，于是就会复制原来的选择器，然后加上另一个类，让它区别于想要覆盖的选择器。
+(2) 不要使用！important。它比ID更难覆盖，一旦用了它，想要覆盖原先的声明，就需要再加上一个！important，而且依然要处理优先级的问题。
+关于重要性的一个重要提醒
+当创建一个用于分发的JavaScript模块（比如NPM包）时，强烈建议尽量不要在JavaScript里使用行内样式。如果这样做了，就是在强迫使用该包的开发人员要么全盘接受包里的样式，要么给每个想修改的属性加上！important。
+正确的做法是在包里包含一个样式表。如果组件需要频繁修改样式，通常最好用JavaScript给元素添加或者移除类。这样用户就可以在使用这份样式表的同时，在不引入优先级竞赛的前提下，按照自己的喜好选择编辑其中的样式</p></li></ol> <h2 id="css继承性"><a href="#css继承性" class="header-anchor">#</a> css继承性</h2> <ol><li><p>子元素继承父元素样式(子承父业)</p></li> <li><p>继承样式是部分的，而且不是全部</p> <ol><li><div class="language- extra-class"><pre class="language-text"><code>文本属性：
+color、
+font、font-family、font-size、font-weight、font-variant、font-style、
+line-height、letter-spacing、
+text-align、text-indent、text-transform、
+white-space以及word-spacing。
+</code></pre></div></li> <li><div class="language- extra-class"><pre class="language-text"><code>列表属性：list-style、list-style-type、list-style-position以及list-style-image。
+</code></pre></div></li> <li><div class="language- extra-class"><pre class="language-text"><code>表格的边框属性border-collapse和border-spacing。注意，这些属性控制的是表格的边框行为，而不是常用于指定非表格元素边框的属性
+</code></pre></div></li></ol></li> <li><p>继承可以优化或简化代码，降低代码读写和复杂度及阅读性</p></li></ol> <h2 id="css权重"><a href="#css权重" class="header-anchor">#</a> css权重</h2> <ol><li><p>权重计算公式</p> <table><thead><tr><th>选择器</th> <th>计算权重公式</th></tr></thead> <tbody><tr><td>继承性，通用选择器(*),关系选择器</td> <td>0,0,0,0</td></tr> <tr><td>元素选择器,伪元素选择器</td> <td>0,0,0,1</td></tr> <tr><td>类选择器,伪类选择器,属性选择器</td> <td>0,0,1,0</td></tr> <tr><td>ID选择器</td> <td>0,1,0,0</td></tr> <tr><td>行内样式 style=&quot;&quot;</td> <td>1,0,0,0</td></tr> <tr><td>!important</td> <td>∞ 无穷大</td></tr></tbody></table></li> <li><p>权重金字塔</p> <p>T0：!important</p> <p>T1：行内样式</p> <p>T2:   ID</p> <p>T3:   类 , 伪类 ,  属性</p> <p>T4:   元素 ， 伪元素</p> <p>T5:   通配符,后代,父子,相邻兄弟，普通兄弟,选择器列表</p> <p>T6：继承性，层叠性</p></li> <li><p>权重大小</p> <div class="language- extra-class"><pre class="language-text"><code>!important  &gt;行内样式&gt;ID&gt;(类,伪类,属性)&gt;(元素,伪元素)&gt;(通配符,后代,父子,相邻兄弟，普通兄弟,选择器列表)&gt;(继承性，层叠性)
+</code></pre></div><ol><li><div class="language- extra-class"><pre class="language-text"><code>!important&gt;行内样式&gt;ID
+</code></pre></div></li> <li><div class="language- extra-class"><pre class="language-text"><code>类&gt;元素&gt;关系
+</code></pre></div></li> <li><div class="language- extra-class"><pre class="language-text"><code>伪类&gt;伪元素&gt;关系
+</code></pre></div></li> <li><div class="language- extra-class"><pre class="language-text"><code>属性&gt;元素&gt;关系&gt;继承
+</code></pre></div></li></ol></li> <li><p>数位之间没有进制 比如说： 0,0,0,5 + 0,0,0,5 =0,0,0,10 而不是 0,0, 1, 0， 所以不会存在10个div能赶上一个类选择器的情况。</p></li></ol></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/test/css/Selectors/Selector.html" class="prev">
+        选择器
+      </a></span> <span class="next"><a href="/test/css/Types/Angle.html">
+        角度
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/test/assets/js/app.d8fe27c6.js" defer></script><script src="/test/assets/js/2.ef0a363d.js" defer></script><script src="/test/assets/js/25.641d2aa1.js" defer></script>
+  </body>
+</html>
